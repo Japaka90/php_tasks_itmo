@@ -15,7 +15,7 @@ function authorize($username, $password)
     }
 
     $_SESSION['user'] = [
-        'id' => $user['id']
+        'id' => $user['id'],
         'username' => $user['username'],
     ];
 

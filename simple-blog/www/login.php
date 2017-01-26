@@ -1,5 +1,3 @@
-<?php
-
 
 <?php require_once  __DIR__ . '/../init.php'; ?>
 
@@ -12,9 +10,11 @@ if (isAuthorized()){
 
 $data = $_POST['user'] ?? [];
 
-if (!authorize($data['username'], $data['password'])) {
+if ($data) {
+    if (!authorize($data['username'], $data['password'])) {
     echo "Вы ввели неправильный логин или пароль";
-} ;
+    }
+}
 
 ?>
 
