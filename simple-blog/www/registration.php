@@ -42,6 +42,10 @@ if ($data) {
         <label for="user_password">Введите пароль</label>
         <input name="user[password]" id="user_password" type="password">
     </div>
+    <div>
+        <label for="user_password">Повторите пароль</label>
+        <input name="user[password]" id="user_password" type="password">
+    </div>
     <?php if (isset($user['id'])): ?>
         <input type="hidden" name="user['user']" value="<?= $user['user']?>">
     <?php endif; ?>
