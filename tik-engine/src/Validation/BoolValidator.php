@@ -1,5 +1,7 @@
 <?php
 
+namespace Japaka90\TickEngine\Validation;
+
 class BoolValidator extends Validator
 {
     public function filter($value)

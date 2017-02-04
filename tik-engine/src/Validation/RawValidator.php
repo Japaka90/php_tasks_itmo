@@ -5,12 +5,12 @@ class RawValidator extends Validator
 {
     public function filter($value)
     {
-        return (string) $this->validate($value);
+        return (string) $this->filterVar($value, FILTER_UNSAFE_RAW);
     }
 
     public function validate($value)
     {
-        return $value;
+        return $this->filter($value) ?: $this->getDefault;
     }
 
 }

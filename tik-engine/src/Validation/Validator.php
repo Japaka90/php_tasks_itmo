@@ -1,5 +1,6 @@
 <?php
 
+namespace Japaka90\TickEngine\Validation;
 
 abstract class Validator
 {
